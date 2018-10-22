@@ -13,6 +13,8 @@
 		A17D0845217DCFF80020A0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17D0844217DCFF80020A0C6 /* Assets.xcassets */; };
 		A17D0848217DCFF80020A0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17D0846217DCFF80020A0C6 /* LaunchScreen.storyboard */; };
 		A17D084B217DCFF80020A0C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17D084A217DCFF80020A0C6 /* main.m */; };
+		A17D0854217DD05C0020A0C6 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = A17D0852217DD05C0020A0C6 /* mongoose.c */; };
+		A17D0857217DD0850020A0C6 /* SandboxAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A17D0856217DD0850020A0C6 /* SandboxAccessor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		A17D0847217DCFF80020A0C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A17D0849217DCFF80020A0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17D084A217DCFF80020A0C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A17D0852217DD05C0020A0C6 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		A17D0853217DD05C0020A0C6 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		A17D0855217DD0850020A0C6 /* SandboxAccessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxAccessor.h; sourceTree = "<group>"; };
+		A17D0856217DD0850020A0C6 /* SandboxAccessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxAccessor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 		A17D082F217DCFF80020A0C6 = {
 			isa = PBXGroup;
 			children = (
+				A17D0851217DD05C0020A0C6 /* SandboxAccessor */,
 				A17D083A217DCFF80020A0C6 /* SandboxAccessorDemo */,
 				A17D0839217DCFF80020A0C6 /* Products */,
 			);
@@ -69,6 +76,17 @@
 				A17D084A217DCFF80020A0C6 /* main.m */,
 			);
 			path = SandboxAccessorDemo;
+			sourceTree = "<group>";
+		};
+		A17D0851217DD05C0020A0C6 /* SandboxAccessor */ = {
+			isa = PBXGroup;
+			children = (
+				A17D0852217DD05C0020A0C6 /* mongoose.c */,
+				A17D0853217DD05C0020A0C6 /* mongoose.h */,
+				A17D0855217DD0850020A0C6 /* SandboxAccessor.h */,
+				A17D0856217DD0850020A0C6 /* SandboxAccessor.m */,
+			);
+			path = SandboxAccessor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +162,8 @@
 			files = (
 				A17D0840217DCFF80020A0C6 /* ViewController.m in Sources */,
 				A17D084B217DCFF80020A0C6 /* main.m in Sources */,
+				A17D0854217DD05C0020A0C6 /* mongoose.c in Sources */,
+				A17D0857217DD0850020A0C6 /* SandboxAccessor.m in Sources */,
 				A17D083D217DCFF80020A0C6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 444Y5T8EK3;
 				INFOPLIST_FILE = SandboxAccessorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SandboxAccessorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 444Y5T8EK3;
 				INFOPLIST_FILE = SandboxAccessorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SandboxAccessorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
