@@ -24,6 +24,20 @@ if (!error) {
 * Connect to wifi which phone connected.
 * open web browse, and access url: http://the-phone-ip:28686
 
+## Note
+
+Please add #ifdef __OBJC__  #endif in pch file.
+
+```objc
+ #ifdef __OBJC__
+
+ #import ....
+ #import ....
+ #import ....
+
+ #endif
+ ``` 
+
 ## LICENCE 
 
 MIT
